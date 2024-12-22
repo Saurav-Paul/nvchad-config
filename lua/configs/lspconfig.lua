@@ -12,12 +12,16 @@ lspconfig.servers = {
     -- "hls",
     -- "ols",
     "pyright",
+    "ts_ls",
+    "ruff",
 }
 
 -- list of servers configured with default config.
 local default_servers = {
     -- "ols",
     -- "pyright",
+    "ts_ls",
+    "ruff",
 }
 
 -- lsps with default config
@@ -37,7 +41,9 @@ lspconfig.pyright.setup({
     settings = {
         python = {
             analysis = {
-                typeCheckingMode = "off", -- Disable type checking diagnostics
+                autoSearchPaths = true,
+                typeCheckingMode = "off",
+                autoImportCompletions = true,
             },
         },
     },
@@ -78,7 +84,7 @@ lspconfig.pyright.setup({
 
 -- lspconfig.hls.setup({
 --     on_attach = function(client, bufnr)
---         client.server_capabilities.documentFormattingProvider = false
+--  https://meet.google.com/xrr-mcqx-gnhttps://meet.google.com/xrr-mcqx-gnss       client.server_capabilities.documentFormattingProvider = false
 --         client.server_capabilities.documentRangeFormattingProvider = false
 --         on_attach(client, bufnr)
 --     end,
