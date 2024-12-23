@@ -7,6 +7,9 @@ o.shiftwidth = 4
 o.tabstop = 4
 o.softtabstop = 4
 
+--- Conceal for markdown
+o.conceallevel = 1
+
 -- o.cursorlineopt ='both' -- to enable cursorline!
 
 -- set filetype for .CBL COBOL files.

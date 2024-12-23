@@ -26,6 +26,7 @@ local options = {
         "javascript",
         "typescript",
         "tsx",
+        "markdown",
     },
 
     highlight = {
